@@ -1,0 +1,50 @@
+---
+title:"Shiny Application and Reproducible Pitch Project"
+author: "suvi"
+date: "May 13, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## *Itroduction*
+ 1.This project is part of developing data products course.
+ 2.The r presentation is generated using Rstudio.
+ 3.The Shiny application pitched by this presentation is at 
+    http://127.0.0.1:5084/
+ 4. Code is available at https://github.com/sujv/Developing-Data-Product-course-project  
+
+
+
+## *What is the purpose of the Shiny app?*
+
+The cars dataset is used to predict the distance of the car from the speed of car.
+
+## *How The Prediction Works:*
+   Here we are predicting distance travelled by car from speed of the car .
+   We are using *Linear regression* for the prediction.
+
+```{r cars, echo=FALSE}
+summary(cars)
+model<-lm(dist~speed,data=cars)
+pred<-predict(model,data=cars)
+pred
+```
+## *Give It a Try:*
+    The Shiny application pitched by this presentation is at 
+    http://127.0.0.1:5084/
+    Code is available at     https://github.com/sujv/Developing-Data-Product-course-project  
+    
+
+
+
+
+
+
+
+
+
+
+
